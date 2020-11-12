@@ -26,15 +26,15 @@ let repositories = [
     },
     {
         name: "blackmatrix7",
-        url: "https://github.com/blackmatrix7/ios_rule_script",
+        url: "https://github.com/blackmatrix7/ios_rule_script/tree/master",
     },
     {
         name: "yangtingxiao",
-        url: "https://github.com/yangtingxiao/QuantumultX",
+        url: "https://github.com/yangtingxiao/QuantumultX/tree/master",
     },
     {
         name: "chavyleung",
-        url: "https://github.com/chavyleung/scripts",
+        url: "https://github.com/chavyleung/scripts/tree/master",
     },
     {
         name: "Sunert",
