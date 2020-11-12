@@ -57,6 +57,10 @@ let repositories = [
         file_names: ["github.js"],
         url: "https://github.com/Peng-YM/QuanX/tree/master/Tasks", //路径模板🌟
     },
+    {
+        name: "zZpiglet",
+        url: "https://github.com/zZPiglet/Task/tree/master", 
+    },
 ];
 
 const $ = API("github", false);
