@@ -52,6 +52,11 @@ let repositories = [
         name: "barrym-chen",
         url: "https://github.com/barrym-chen/Script",
     },
+    {
+        name: "Peng-YM -- Github",
+        file_names: ["github.js"],
+        url: "https://github.com/Peng-YM/QuanX/tree/master/Tasks", //路径模板🌟
+    },
 ];
 
 const $ = API("github", false);
