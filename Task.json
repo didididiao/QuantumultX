@@ -1,5 +1,6 @@
 {
-  "name": "自用签到集合",
+  "name": "didididiao",
+  "description": "https://github.com/didididiao/QuantumultX",
   "task": [
 "5 0 0,9,11,13,15,17,19,20,21,23 * * 1/5 https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_live_redrain.js, tag=直播红包雨, img-url=https://raw.githubusercontent.com/didididiao/icon/master/jd.png, enabled=true",
 "5 0,18 * * * https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js, tag=京东签到, img-url=https://raw.githubusercontent.com/didididiao/icon/master/jd.png, enabled=true",
