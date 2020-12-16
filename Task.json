@@ -58,7 +58,7 @@
 "40 */6 * * * https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_superMarket.js, tag=东东超市, img-url=https://raw.githubusercontent.com/didididiao/icon/master/jd.png, enabled=true",
 "45 */1 * * * https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_daily_egg.js, tag=天天提鹅, img-url=https://raw.githubusercontent.com/didididiao/icon/master/jdjr.png, enabled=true",
 "59 59 23 * * * https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_blueCoin.js, tag=东东超市兑京豆, img-url=https://raw.githubusercontent.com/didididiao/icon/master/jd.png, enabled=true",
-"25 * * * * https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_jdfactory.js, tag=东东工厂, img-url=https://raw.githubusercontent.com/didididiao/icon/master/jd.png, enabled=truev
+"25 * * * * https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_jdfactory.js, tag=东东工厂, img-url=https://raw.githubusercontent.com/didididiao/icon/master/jd.png, enabled=true",
 "* * * * * https://raw.githubusercontent.com/chavyleung/scripts/master/box/switcher/box.switcher.js, tag=切换会话, img-url=https://raw.githubusercontent.com/didididiao/icon/master/box.png, enabled=false"
   ]
 }
