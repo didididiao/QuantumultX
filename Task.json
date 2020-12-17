@@ -3,7 +3,6 @@
   "task": [
 "5 0 0,9,11,13,15,17,19,20,21,23 * * 1/5 https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_live_redrain.js, tag=直播红包雨, img-url=https://raw.githubusercontent.com/didididiao/icon/master/jd.png",
 "5 0,18 * * * https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js, tag=京东签到, img-url=https://raw.githubusercontent.com/didididiao/icon/master/jd.png",
-"10 0 * * * zaaap.js, tag=Zaaap!, img-url=https://raw.githubusercontent.com/didididiao/icon/master/zaaap.png",
 "0 6,20 * * * https://raw.githubusercontent.com/zZPiglet/Task/master/DiDi/DiDi_new.js, tag=滴滴出行, img-url=https://raw.githubusercontent.com/didididiao/icon/master/didi.png",
 "1 6 * * * https://raw.githubusercontent.com/NobyDa/Script/master/52pojie-DailyBonus/52pojie.js, tag=吾爱破解, img-url=https://raw.githubusercontent.com/didididiao/icon/master/checkin.png",
 "2 6 * * * https://raw.githubusercontent.com/NobyDa/Script/master/iQIYI-DailyBonus/iQIYI.js, tag=爱奇艺, img-url=https://raw.githubusercontent.com/didididiao/icon/master/iqiyi.png",
