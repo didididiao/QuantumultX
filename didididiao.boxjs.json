@@ -124,7 +124,7 @@
           "desc": "此处请填写你的京东CrazyJoy码"
         },	
         {
-          "id": "zz_shareCode1",
+          "id": "zz_shareCode2",
           "name": "账号二的京东赚赚",
           "val": "",
           "type": "text",
@@ -173,7 +173,7 @@
           "desc": "此处请填写你的京东CrazyJoy码"
         },
         {
-          "id": "zz_shareCode1",
+          "id": "zz_shareCode3",
           "name": "账号一的京东赚赚",
           "val": "",
           "type": "text",
