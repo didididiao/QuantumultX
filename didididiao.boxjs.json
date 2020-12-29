@@ -14,22 +14,22 @@
 	       "mc_shareCode1",
 	       "dd_shareCode1",
 	       "jx_shareCode1",
-           "joy_shareCode1",
-           "zz_shareCode1",
+         "joy_shareCode1",
+         "zz_shareCode1",
 	       "zd_shareCode2",
 	       "nc_shareCode2",
 	       "mc_shareCode2",
 	       "dd_shareCode2",
 	       "jx_shareCode2",
-           "joy_shareCode2",
-           "zz_shareCode2",
+         "joy_shareCode2",
+         "zz_shareCode2",
 	       "zd_shareCode3",
 	       "nc_shareCode3",
 	       "mc_shareCode3",
 	       "dd_shareCode3",
 	       "jx_shareCode3",
-           "joy_shareCode3",
-           "zz_shareCode3"
+         "joy_shareCode3",
+         "zz_shareCode3"
       ],
       "settings": [
         {
@@ -116,7 +116,7 @@
           "type": "text",
           "desc": "此处请填写你的京喜工厂码"
         },        
-	    {
+	      {
           "id": "joy_shareCode2",
           "name": "账号二的京东CrazyJoy",
           "val": "",
@@ -124,13 +124,13 @@
           "desc": "此处请填写你的京东CrazyJoy码"
         },	
         {
-          "id": "zz_shareCode1",
+          "id": "zz_shareCode2",
           "name": "账号二的京东赚赚",
           "val": "",
           "type": "text",
           "desc": "此处请填写你的京东赚赚码"
         },	       
-	    {
+	      {
           "id": "zd_shareCode3",
           "name": "账号三的种豆得豆",
           "val": "",
@@ -173,7 +173,7 @@
           "desc": "此处请填写你的京东CrazyJoy码"
         },
         {
-          "id": "zz_shareCode1",
+          "id": "zz_shareCode3",
           "name": "账号一的京东赚赚",
           "val": "",
           "type": "text",
