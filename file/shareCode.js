@@ -19,13 +19,13 @@ cron "15,20 10 1,10,20 * *" script-path=https://raw.githubusercontent.com/dididi
 
 const jsname='互助码提交'
 const $ = Env(jsname)
-const dd_shareCode1 = $.getdata('dd_shareCode1') ;
-const jx_shareCode1 = $.getdata('jx_shareCode1') ;
-const zd_shareCode1 = $.getdata('zd_shareCode1') ;
-const nc_shareCode1 = $.getdata('nc_shareCode1') ;
-const mc_shareCode1 = $.getdata('mc_shareCode1') ;
-const joy_shareCode1 = $.getdata('joy_shareCode1') ;
-const zz_shareCode1 = $.getdata('zz_shareCode1') ; 
+const dd_shareCode1 = 'P04z54XCjVWnYaS5uGFtrR1Y6jHK7yMNQ';
+const jx_shareCode1 = 'VkLv7zltUKl6MWvbRGmTjA==';
+const zd_shareCode1 = '2wh4ycug2ksoytg6yz3ehr34au5ac3f4ijdgqji';
+const nc_shareCode1 = '44bd306098ba43c4bfb903bd3a41e632';
+const mc_shareCode1 = 'MTAxODc2NTEzMjAwMDAwMDAxMDMyMjEwMw==';
+const joy_shareCode1 = 'mawFxOomdWBoBmYh0_LujeQ==';
+const zz_shareCode1 = 'A37joSyAuGbi20OBL'; 
 
 const dd_shareCode2 = $.getdata('dd_shareCode2') ;
 const jx_shareCode2 = $.getdata('jx_shareCode2') ;
@@ -34,7 +34,7 @@ const nc_shareCode2 = $.getdata('nc_shareCode2') ;
 const mc_shareCode2 = $.getdata('mc_shareCode2') ;
 const joy_shareCode2 = $.getdata('joy_shareCode2') ;
 const zz_shareCode2 = $.getdata('zz_shareCode2') ; 
-
+/*
 const dd_shareCode3 = $.getdata('dd_shareCode3') ;
 const jx_shareCode3 = $.getdata('jx_shareCode3') ;
 const zd_shareCode3 = $.getdata('zd_shareCode3') ;
@@ -42,6 +42,7 @@ const nc_shareCode3 = $.getdata('nc_shareCode3') ;
 const mc_shareCode3 = $.getdata('mc_shareCode3') ;
 const joy_shareCode3 = $.getdata('joy_shareCode3') ;
 const zz_shareCode3 = $.getdata('zz_shareCode3') ; 
+*/
 
 let dd_shareCodeVal = "";
 let jx_shareCodeVal = "";
@@ -61,7 +62,7 @@ let K = 0;
 let tz='';
 const dd=1//单次任务延迟,默认1秒
 
-for (let index = 1; index <= 3; index++) {
+for (let index = 1; index <= 2; index++) {
     if ($.getdata('dd_shareCode'+index) === undefined || $.getdata('dd_shareCode'+index) === '') {
       break
     }
@@ -103,7 +104,7 @@ function all() {
           execmc_shareCode();//京东萌宠
           if(i == 6)  
           execjoy_shareCode();//京东CrazyJoy任务  
-	  if (i == 7 )
+	        if (i == 7 )
           execzz_shareCode();//京东赚赚任务  
         else  if (i == 8 ) {
         console.log('东东工厂Body:');
@@ -115,11 +116,11 @@ function all() {
   	console.log('\r\n京东农场Body:');
   	console.log( $.nc_shareCodeBody);
   	console.log('\r\n京东萌宠Body:');
-	console.log( $.mc_shareCodeBody);
-	console.log('\r\n京东CrazyJoyBody:');
+	  console.log( $.mc_shareCodeBody);
+	  console.log('\r\n京东CrazyJoyBody:');
     console.log( $.joy_shareCodeBody);
     console.log('\r\nj京东赚赚:');
-	console.log( $.zz_shareCodeBody);
+	  console.log( $.zz_shareCodeBody);
      }else if (i == 9){  
        if ( K < dd_shareCodeArr.length - 1) {
               K += 1;
