@@ -60,7 +60,7 @@ const  joy_shareCodeArr = [];
 const  zz_shareCodeArr = [];
 let K = 0;
 let tz='';
-const dd=1//单次任务延迟,默认1秒
+const dd=2//单次任务延迟,默认1秒
 
 for (let index = 1; index <= 2; index++) {
     if ($.getdata('dd_shareCode'+index) === undefined || $.getdata('dd_shareCode'+index) === '') {
@@ -119,7 +119,7 @@ function all() {
 	  console.log( $.mc_shareCodeBody);
 	  console.log('\r\n京东CrazyJoyBody:');
     console.log( $.joy_shareCodeBody);
-    console.log('\r\nj京东赚赚:');
+    console.log('\r\n京东赚赚:');
 	  console.log( $.zz_shareCodeBody);
      }else if (i == 9){  
        if ( K < dd_shareCodeArr.length - 1) {
@@ -147,7 +147,15 @@ function execdd_shareCode() {
   return new Promise((resolve) => {
     const url = { 
        url: 'http://api.turinglabs.net/api/v1/jd/ddfactory/create/'+dd_shareCodeVal,
-       headers: {'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 12_4_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148'}
+       headers: {
+         'Host':'api.turinglabs.net',
+         'Accept':'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+         'Upgrade-Insecure-Requests':'1',
+         'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 14_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.2 Mobile/15E148 Safari/604.1',
+         'Accept-Language':'zh-cn',
+         'Accept-Encoding':'gzip,deflate',
+         'Connection':'keep-alive'
+        }
 	}
     $.get(url,(err, resp, data)=> {  
       try {
@@ -167,7 +175,7 @@ function execjx_shareCode() {
   return new Promise((resolve) => {
     const url = { 
        url: 'http://api.turinglabs.net/api/v1/jd/jxfactory/create/'+jx_shareCodeVal,
-       headers: {'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 12_4_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148'},
+       headers: {'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 14_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.2 Mobile/15E148 Safari/604.1'},
 	}
     $.get(url,(err, resp, data)=> {  
       try {
@@ -187,7 +195,7 @@ function execzd_shareCode() {
   return new Promise((resolve) => {
     const url = { 
        url: 'http://api.turinglabs.net/api/v1/jd/bean/create/'+zd_shareCodeVal,
-       headers: {'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 12_4_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148'},
+       headers: {'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 14_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.2 Mobile/15E148 Safari/604.1'},
 	}
     $.get(url,(err, resp, data)=> {  
       try {
@@ -207,7 +215,7 @@ function execnc_shareCode() {
   return new Promise((resolve) => {
     const url = { 
        url: 'http://api.turinglabs.net/api/v1/jd/farm/create/'+nc_shareCodeVal,
-       headers: {'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 12_4_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148'},
+       headers: {'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 14_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.2 Mobile/15E148 Safari/604.1'},
 	}
     $.get(url,(err, resp, data)=> {  
       try {
@@ -228,7 +236,7 @@ function execmc_shareCode() {
   return new Promise((resolve) => {
     const url = { 
        url: 'http://api.turinglabs.net/api/v1/jd/pet/create/'+mc_shareCodeVal,
-       headers: {'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 12_4_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148'},
+       headers: {'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 14_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.2 Mobile/15E148 Safari/604.1'},
 	}
     $.get(url,(err, resp, data)=> {  
       try {
@@ -247,7 +255,7 @@ function execjoy_shareCode() {
   return new Promise((resolve) => {
     const url = { 
        url: 'https://code.chiang.fun/api/v1/jd/jdcrazyjoy/create/'+joy_shareCodeVal,
-       headers: {'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 12_4_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148'},
+       headers: {'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 14_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.2 Mobile/15E148 Safari/604.1'},
 	}
     $.get(url,(err, resp, data)=> {  
       try {
@@ -266,7 +274,7 @@ function execzz_shareCode() {
     return new Promise((resolve) => {
       const url = { 
          url: 'https://code.chiang.fun/api/v1/jd/jdzz/create/'+zz_shareCodeVal,
-         headers: {'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 12_4_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148'},
+         headers: {'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 14_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.2 Mobile/15E148 Safari/604.1'},
       }
       $.get(url,(err, resp, data)=> {  
         try {
