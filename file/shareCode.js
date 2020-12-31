@@ -7,7 +7,7 @@
 const jsname='互助码提交'
 const $ = Env(jsname)
 const zz_shareCode1 = 'A37joSyAuGbi20OBL'; //京东赚赚
-const dd_shareCode1 = 'P04z54XCjVWnYaS5uGFtrR1Y6jHK7yMNQ';//东东工厂
+const dd_shareCode1 = 'T016anDNlJOnIdlp-JpHCjVWnYaS5kRrbA';//东东工厂
 const jx_shareCode1 = 'VkLv7zltUKl6MWvbRGmTjA==';//京喜工厂
 const zd_shareCode1 = '2wh4ycug2ksoytg6yz3ehr34au5ac3f4ijdgqji';//种豆得豆
 const joy_shareCode1 = 'mawFxOomdWBoBmYh0_LujeQ==';//疯狂的JOY
@@ -15,12 +15,12 @@ const nc_shareCode1 = '44bd306098ba43c4bfb903bd3a41e632';//东东农场
 const mc_shareCode1 = 'MTAxODc2NTEzMjAwMDAwMDAxMDMyMjEwMw==';//东东萌宠
 
 
-const zz_shareCode2 = $.getdata('zz_shareCode2') ; 
-const dd_shareCode2 = $.getdata('dd_shareCode2') ;
+const zz_shareCode2 = 'S5KkcRUpMplKFJEj1nKUDJQ'; 
+const dd_shareCode2 = 'T0225KkcRUpMplKFJEj1nKUDJQCjVWnYaS5kRrbA';
 const jx_shareCode2 = $.getdata('jx_shareCode2') ;
-const zd_shareCode2 = $.getdata('zd_shareCode2') ;
+const zd_shareCode2 = 'mlrdw3aw26j3xhrhvekblbdd5np3puc4m2cepeq';
 const joy_shareCode2 = $.getdata('joy_shareCode2') ;
-const nc_shareCode2 = $.getdata('nc_shareCode2') ;
+const nc_shareCode2 = 'af462afe47104577b5dcf3a4bd260d10';
 const mc_shareCode2 = $.getdata('mc_shareCode2') ;
 
 /*
