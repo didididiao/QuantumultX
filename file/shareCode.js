@@ -1,7 +1,7 @@
 /*
 脚本修改自photonmang的互助码脚本 https://github.com/photonmang/quantumultX/blob/master/cache/shareCode.js;
 感谢@photonmang;
-自用脚本.
+内置互助码，自用。
 */
 
 const jsname='互助码提交'
