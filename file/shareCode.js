@@ -52,7 +52,7 @@ let tz='';
 const dd=2//单次任务延迟,默认1秒
 
 for (let index = 1; index <= 2; index++) {
-    if ($.getdata('dd_shareCode'+index) === undefined || $.getdata('dd_shareCode'+index) === '') {
+    if ($.getdata('zz_shareCode'+index) === undefined || $.getdata('zz_shareCode'+index) === '') {
       break
     }
     zz_shareCodeArr.push($.getdata("zz_shareCode"+index));
@@ -63,7 +63,7 @@ for (let index = 1; index <= 2; index++) {
     nc_shareCodeArr.push($.getdata("nc_shareCode"+index));
     mc_shareCodeArr.push($.getdata("mc_shareCode"+index));
   }
-    console.log(`============ 共${dd_shareCodeArr.length}个京东账号  =============\n`)
+    console.log(`============ 共${zz_shareCodeArr.length}个京东账号  =============\n`)
 
 all();
 function all() {
@@ -111,10 +111,10 @@ function all() {
          	console.log('\r\n东东萌宠:');
 	        console.log( $.mc_shareCodeBody);
      }else if (i == 9){  
-       if ( K < dd_shareCodeArr.length - 1) {
+       if ( K < zz_shareCodeArr.length - 1) {
               K += 1;
               all();
-}    else if (K == dd_shareCodeArr.length - 1) {
+}    else if (K == zz_shareCodeArr.length - 1) {
               showmsg(); // 通知
               $.done();
   }
@@ -139,7 +139,7 @@ function execzz_shareCode() {
     }
     $.get(url,(err, resp, data)=> {  
       try {
-        $.joy_shareCodeBody = data
+        $.zz_shareCodeBody = data
         tz += `京东赚赚:`+ resp.statusCode+`\n`
       } catch (e) {
         $.logErr(e, resp)
