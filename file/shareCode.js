@@ -2,30 +2,17 @@
 脚本修改自photonmang的互助码脚本 https://github.com/photonmang/quantumultX/blob/master/cache/shareCode.js;
 感谢@photonmang;
 自用脚本.
-
-=================================Quantumultx=========================
-[task_local]
-#互助码提交
-15,20 10 1,10,20 * * https://raw.githubusercontent.com/didididiao/QuantumultX/master/file/shareCode.js, tag=互助码提交, img-url=https://raw.githubusercontent.com/didididiao/icon/master/jd.png
-=================================Loon===================================
-[Script]
-cron "15,20 10 1,10,20 * *" script-path=https://raw.githubusercontent.com/didididiao/QuantumultX/master/file/shareCode.js,tag=互助码提交
-===================================Surge================================
-互助码提交 = type=cron,cronexp="15,20 10 1,10,20 * *",wake-system=1,timeout=120,script-path=https://raw.githubusercontent.com/didididiao/QuantumultX/master/file/shareCode.js
-====================================小火箭=============================
-互助码提交 = type=cron,script-path=https://raw.githubusercontent.com/didididiao/QuantumultX/master/file/shareCode.js, cronexpr="15,20 10 1,10,20 * *", timeout=500, enable=true
-
 */
 
 const jsname='互助码提交'
 const $ = Env(jsname)
-const dd_shareCode1 = 'P04z54XCjVWnYaS5uGFtrR1Y6jHK7yMNQ';
-const jx_shareCode1 = 'VkLv7zltUKl6MWvbRGmTjA==';
-const zd_shareCode1 = '2wh4ycug2ksoytg6yz3ehr34au5ac3f4ijdgqji';
-const nc_shareCode1 = '44bd306098ba43c4bfb903bd3a41e632';
-const mc_shareCode1 = 'MTAxODc2NTEzMjAwMDAwMDAxMDMyMjEwMw==';
-const joy_shareCode1 = 'mawFxOomdWBoBmYh0_LujeQ==';
-const zz_shareCode1 = 'A37joSyAuGbi20OBL'; 
+const dd_shareCode1 = 'P04z54XCjVWnYaS5uGFtrR1Y6jHK7yMNQ';//东东工厂
+const jx_shareCode1 = 'VkLv7zltUKl6MWvbRGmTjA==';//京喜工厂
+const zd_shareCode1 = '2wh4ycug2ksoytg6yz3ehr34au5ac3f4ijdgqji';//种豆得豆
+const nc_shareCode1 = '44bd306098ba43c4bfb903bd3a41e632';//东东农场
+const mc_shareCode1 = 'MTAxODc2NTEzMjAwMDAwMDAxMDMyMjEwMw==';//东东萌宠
+const joy_shareCode1 = 'mawFxOomdWBoBmYh0_LujeQ==';//疯狂的JOY
+const zz_shareCode1 = 'A37joSyAuGbi20OBL'; //京东赚赚
 
 const dd_shareCode2 = $.getdata('dd_shareCode2') ;
 const jx_shareCode2 = $.getdata('jx_shareCode2') ;
@@ -85,7 +72,7 @@ function all() {
   mc_shareCodeVal = mc_shareCodeArr[K];
   joy_shareCodeVal = joy_shareCodeArr[K];
   zz_shareCodeVal = zz_shareCodeArr[K];
-  for (let i = 0; i < 10; i++) {
+  for (let i = 0; i < 11; i++) {
     (function (i) {
       setTimeout(
         function () {
@@ -99,29 +86,31 @@ function all() {
           if (i == 3 )
           execzd_shareCode(); //种豆得豆            
           if (i == 4 )
-          execnc_shareCode();//京东农场
+          execnc_shareCode();//东东农场
           if (i == 5 )
-          execmc_shareCode();//京东萌宠
-          if(i == 6)  
-          execjoy_shareCode();//京东CrazyJoy任务  
+          execmc_shareCode();//东东萌宠
+          if (i == 6)  
+          execjoy_shareCode();//疯狂的JOY 
 	        if (i == 7 )
-          execzz_shareCode();//京东赚赚任务  
-        else  if (i == 8 ) {
-        console.log('东东工厂Body:');
+          execzz_shareCode();//京东赚赚
+          if (i == 8)
+          console.log(`提交完毕`);
+        else  if (i == 9 ) {
+        console.log('东东工厂:');
   	console.log( $.dd_shareCodeBody);
-  	console.log('\r\n京喜工厂Body:');
+  	console.log('\r\n京喜工厂:');
   	console.log( $.jx_shareCodeBody);
-  	console.log('\r\n种豆得豆Body:');
+  	console.log('\r\n种豆得豆:');
   	console.log( $.zd_shareCodeBody);
-  	console.log('\r\n京东农场Body:');
+  	console.log('\r\n东东农场:');
   	console.log( $.nc_shareCodeBody);
-  	console.log('\r\n京东萌宠Body:');
+  	console.log('\r\n东东萌宠:');
 	  console.log( $.mc_shareCodeBody);
-	  console.log('\r\n京东CrazyJoyBody:');
+	  console.log('\r\n疯狂的JOY:');
     console.log( $.joy_shareCodeBody);
     console.log('\r\n京东赚赚:');
 	  console.log( $.zz_shareCodeBody);
-     }else if (i == 9){  
+     }else if (i == 10){  
        if ( K < dd_shareCodeArr.length - 1) {
               K += 1;
               all();
@@ -132,7 +121,7 @@ function all() {
  }
 },
 
-        (i + 1) * dd * 1000
+        (i + 1) * dd * 2000
       );
     })(i);
   }
@@ -147,15 +136,7 @@ function execdd_shareCode() {
   return new Promise((resolve) => {
     const url = { 
        url: 'http://api.turinglabs.net/api/v1/jd/ddfactory/create/'+dd_shareCodeVal,
-       headers: {
-         'Host':'api.turinglabs.net',
-         'Accept':'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
-         'Upgrade-Insecure-Requests':'1',
-         'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 14_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.2 Mobile/15E148 Safari/604.1',
-         'Accept-Language':'zh-cn',
-         'Accept-Encoding':'gzip,deflate',
-         'Connection':'keep-alive'
-        }
+       headers: {'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 14_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.2 Mobile/15E148 Safari/604.1'}
 	}
     $.get(url,(err, resp, data)=> {  
       try {
@@ -220,7 +201,7 @@ function execnc_shareCode() {
     $.get(url,(err, resp, data)=> {  
       try {
         $.nc_shareCodeBody = data
-        tz += `京东农场:`+ resp.statusCode+`\n`
+        tz += `东东农场:`+ resp.statusCode+`\n`
       } catch (e) {
         $.logErr(e, resp)
       } finally {
@@ -241,7 +222,7 @@ function execmc_shareCode() {
     $.get(url,(err, resp, data)=> {  
       try {
         $.mc_shareCodeBody = data
-        tz += `京东萌宠:`+ resp.statusCode+`\n`
+        tz += `东东萌宠:`+ resp.statusCode+`\n`
       } catch (e) {
         $.logErr(e, resp)
       } finally {
@@ -260,7 +241,7 @@ function execjoy_shareCode() {
     $.get(url,(err, resp, data)=> {  
       try {
         $.joy_shareCodeBody = data
-        tz += `京东CrazyJoy:`+ resp.statusCode+`\n`
+        tz += `疯狂的JOY:`+ resp.statusCode+`\n`
       } catch (e) {
         $.logErr(e, resp)
       } finally {
