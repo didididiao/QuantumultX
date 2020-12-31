@@ -1,36 +1,35 @@
 /*
 脚本修改自photonmang的互助码脚本 https://github.com/photonmang/quantumultX/blob/master/cache/shareCode.js;
 感谢@photonmang;
-内置互助码，自用。
+自用。
 */
 
 const jsname='互助码提交'
 const $ = Env(jsname)
-const dd_shareCode1 = 'T016anDNlJOnIdlp-JpHCjVWnYaS5kRrbA';//东东工厂
-const jx_shareCode1 = 'VkLv7zltUKl6MWvbRGmTjA==';//京喜工厂
-const zd_shareCode1 = '2wh4ycug2ksoytg6yz3ehr34au5ac3f4ijdgqji';//种豆得豆
-const nc_shareCode1 = '44bd306098ba43c4bfb903bd3a41e632';//东东农场
-const mc_shareCode1 = 'MTAxODc2NTEzMjAwMDAwMDAxMDMyMjEwMw==';//东东萌宠
-const zz_shareCode1 = 'A37joSyAuGbi20OBL'; //京东赚赚
-const joy_shareCode1 = 'mawFxOomdWBoBmYh0_LujeQ==';//疯狂的JOY
+const dd_shareCode1 = $.getdata('dd_shareCode1') ;//东东工厂
+const jx_shareCode1 = $.getdata('jx_shareCode1') ;//京喜工厂
+const zd_shareCode1 = $.getdata('zd_shareCode1') ;//种豆得豆
+const nc_shareCode1 = $.getdata('nc_shareCode1') ;//东东农场
+const mc_shareCode1 = $.getdata('mc_shareCode1') ;//东东萌宠
+const zz_shareCode1 = $.getdata('zz_shareCode1') ; //京东赚赚
+const joy_shareCode1 = $.getdata('joy_shareCode1') ;//疯狂的JOY
 
-const dd_shareCode2 = 'T0225KkcRUpMplKFJEj1nKUDJQCjVWnYaS5kRrbA';
-const jx_shareCode2 = $.getdata('jx_shareCode2') ;
-const zd_shareCode2 = 'mlrdw3aw26j3xhrhvekblbdd5np3puc4m2cepeq';
-const nc_shareCode2 = 'af462afe47104577b5dcf3a4bd260d10';
-const mc_shareCode2 = $.getdata('mc_shareCode2') ;
-const zz_shareCode2 = 'S5KkcRUpMplKFJEj1nKUDJQ'; 
-const joy_shareCode2 = $.getdata('joy_shareCode2') ;
 
-/*
-const dd_shareCode3 = $.getdata('dd_shareCode3') ;
-const jx_shareCode3 = $.getdata('jx_shareCode3') ;
-const zd_shareCode3 = $.getdata('zd_shareCode3') ;
-const nc_shareCode3 = $.getdata('nc_shareCode3') ;
-const mc_shareCode3 = $.getdata('mc_shareCode3') ;
-const joy_shareCode3 = $.getdata('joy_shareCode3') ;
-const zz_shareCode3 = $.getdata('zz_shareCode3') ; 
-*/
+const dd_shareCode1 = $.getdata('dd_shareCode2') ;//东东工厂
+const jx_shareCode1 = $.getdata('jx_shareCode2') ;//京喜工厂
+const zd_shareCode1 = $.getdata('zd_shareCode2') ;//种豆得豆
+const nc_shareCode1 = $.getdata('nc_shareCode2') ;//东东农场
+const mc_shareCode1 = $.getdata('mc_shareCode2') ;//东东萌宠
+const zz_shareCode1 = $.getdata('zz_shareCode2') ; //京东赚赚
+const joy_shareCode1 = $.getdata('joy_shareCode2') ;//疯狂的JOY
+
+const dd_shareCode1 = $.getdata('dd_shareCode3') ;//东东工厂
+const jx_shareCode1 = $.getdata('jx_shareCode3') ;//京喜工厂
+const zd_shareCode1 = $.getdata('zd_shareCode3') ;//种豆得豆
+const nc_shareCode1 = $.getdata('nc_shareCode3') ;//东东农场
+const mc_shareCode1 = $.getdata('mc_shareCode3') ;//东东萌宠
+const zz_shareCode1 = $.getdata('zz_shareCode3') ; //京东赚赚
+const joy_shareCode1 = $.getdata('joy_shareCode3') ;//疯狂的JOY
 
 let dd_shareCodeVal = "";
 let jx_shareCodeVal = "";
@@ -49,8 +48,8 @@ const  joy_shareCodeArr = [];
 let K = 0;
 let tz='';
 const dd=2//单次任务延迟,默认2秒
-/*
-for (let index = 1; index <= 2; index++) {
+
+for (let index = 1; index <= 3; index++) {
     if ($.getdata('dd_shareCode'+index) === undefined || $.getdata('dd_shareCode'+index) === '') {
       break
     }
@@ -63,7 +62,7 @@ for (let index = 1; index <= 2; index++) {
     joy_shareCodeArr.push($.getdata("joy_shareCode"+index)); 
   }
     console.log(`============ 共${dd_shareCodeArr.length}个京东账号  =============\n`)
-*/
+
 all();
 function all() {
   dd_shareCodeVal = dd_shareCodeArr[K];
@@ -121,7 +120,7 @@ function all() {
   }
  }
 },
-        (i + 1) * dd * 2000
+        (i + 1) * dd * 1000
       );
     })(i);
   }
