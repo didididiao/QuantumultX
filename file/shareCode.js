@@ -5,7 +5,7 @@
 */
 
 const jsname='互助码提交'
-const $ = Env(jsname)
+const $ = ENV(jsname)
 const dd_shareCode1 = 'T016anDNlJOnIdlp-JpHCjVWnYaS5kRrbA';//东东工厂
 const jx_shareCode1 = 'VkLv7zltUKl6MWvbRGmTjA==';//京喜工厂
 const zd_shareCode1 = '2wh4ycug2ksoytg6yz3ehr34au5ac3f4ijdgqji';//种豆得豆
