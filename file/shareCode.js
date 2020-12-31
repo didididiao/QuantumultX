@@ -49,7 +49,7 @@ const  joy_shareCodeArr = [];
 let K = 0;
 let tz='';
 const dd=2//单次任务延迟,默认2秒
-
+/*
 for (let index = 1; index <= 2; index++) {
     if ($.getdata('dd_shareCode'+index) === undefined || $.getdata('dd_shareCode'+index) === '') {
       break
@@ -63,7 +63,7 @@ for (let index = 1; index <= 2; index++) {
     joy_shareCodeArr.push($.getdata("joy_shareCode"+index)); 
   }
     console.log(`============ 共${dd_shareCodeArr.length}个京东账号  =============\n`)
-
+*/
 all();
 function all() {
   dd_shareCodeVal = dd_shareCodeArr[K];
