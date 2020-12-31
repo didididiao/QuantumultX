@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 /*
 脚本修改自photonmang的互助码脚本 https://github.com/photonmang/quantumultX/blob/master/cache/shareCode.js;
 感谢@photonmang;
