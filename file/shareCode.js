@@ -15,21 +15,21 @@ const zz_shareCode1 = $.getdata('zz_shareCode1') ; //京东赚赚
 const joy_shareCode1 = $.getdata('joy_shareCode1') ;//疯狂的JOY
 
 
-const dd_shareCode1 = $.getdata('dd_shareCode2') ;//东东工厂
-const jx_shareCode1 = $.getdata('jx_shareCode2') ;//京喜工厂
-const zd_shareCode1 = $.getdata('zd_shareCode2') ;//种豆得豆
-const nc_shareCode1 = $.getdata('nc_shareCode2') ;//东东农场
-const mc_shareCode1 = $.getdata('mc_shareCode2') ;//东东萌宠
-const zz_shareCode1 = $.getdata('zz_shareCode2') ; //京东赚赚
-const joy_shareCode1 = $.getdata('joy_shareCode2') ;//疯狂的JOY
+const dd_shareCode2 = $.getdata('dd_shareCode2') ;//东东工厂
+const jx_shareCode2 = $.getdata('jx_shareCode2') ;//京喜工厂
+const zd_shareCode2 = $.getdata('zd_shareCode2') ;//种豆得豆
+const nc_shareCode2 = $.getdata('nc_shareCode2') ;//东东农场
+const mc_shareCode2 = $.getdata('mc_shareCode2') ;//东东萌宠
+const zz_shareCode2 = $.getdata('zz_shareCode2') ; //京东赚赚
+const joy_shareCode2 = $.getdata('joy_shareCode2') ;//疯狂的JOY
 
-const dd_shareCode1 = $.getdata('dd_shareCode3') ;//东东工厂
-const jx_shareCode1 = $.getdata('jx_shareCode3') ;//京喜工厂
-const zd_shareCode1 = $.getdata('zd_shareCode3') ;//种豆得豆
-const nc_shareCode1 = $.getdata('nc_shareCode3') ;//东东农场
-const mc_shareCode1 = $.getdata('mc_shareCode3') ;//东东萌宠
-const zz_shareCode1 = $.getdata('zz_shareCode3') ; //京东赚赚
-const joy_shareCode1 = $.getdata('joy_shareCode3') ;//疯狂的JOY
+const dd_shareCode3 = $.getdata('dd_shareCode3') ;//东东工厂
+const jx_shareCode3 = $.getdata('jx_shareCode3') ;//京喜工厂
+const zd_shareCode3 = $.getdata('zd_shareCode3') ;//种豆得豆
+const nc_shareCode3 = $.getdata('nc_shareCode3') ;//东东农场
+const mc_shareCode3 = $.getdata('mc_shareCode3') ;//东东萌宠
+const zz_shareCode3 = $.getdata('zz_shareCode3') ; //京东赚赚
+const joy_shareCode3 = $.getdata('joy_shareCode3') ;//疯狂的JOY
 
 let dd_shareCodeVal = "";
 let jx_shareCodeVal = "";
