@@ -7,8 +7,7 @@
 * ==========================Quantumultx=========================
 * [task_local]
 * # 京东助力码上车
-* # 每月1，10，20号的凌晨3点5分 自动上车
-* 0 5 3 1,10,20 * ? https://raw.githubusercontent.com/an0na/R/master/jd_shareMa.js, tag=助力码自动上车, enabled=true
+* 0 5 7 1,10,20 * ? https://raw.githubusercontent.com/didididiao/QuantumultX/master/file/JdShare.js, tag=京东互助吗提交, enabled=true
 * 
 */
 
