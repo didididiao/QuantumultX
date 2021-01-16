@@ -1,6 +1,7 @@
 {
   "name": "低低低调",
   "task": [
+"4 7 * * * https://raw.githubusercontent.com/shylocks/Loon/main/jd_wechat_sign.js, tag=京东粉丝专享, , img-url=https://raw.githubusercontent.com/didididiao/icon/master/jd.png",
 "15,20 10 1,10,20 * * https://raw.githubusercontent.com/didididiao/QuantumultX/master/file/shareCode.js, tag=互助码提交, img-url=https://raw.githubusercontent.com/didididiao/icon/master/jd.png",
 "55 23 * * * https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_unbind.js, tag=注销京东会员卡, img-url=https://raw.githubusercontent.com/didididiao/icon/master/jd.png",
 "10 7 * * * https://raw.githubusercontent.com/yangtingxiao/QuantumultX/master/scripts/jd/jd_crazyJoy.js, tag=疯狂的JOY, img-url=https://raw.githubusercontent.com/didididiao/icon/master/jd.png",
