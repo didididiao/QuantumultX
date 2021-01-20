@@ -1,0 +1,30 @@
+{
+  "id": "didididiao.app.sub",
+  "name": "didididiao 签到应用订阅",
+  "author": "@didididiao",
+  "icon": "https://avatars1.githubusercontent.com/u/36787390?s=400&v=4",
+  "repo": "https://github.com/didididiao/QuantumultX",
+  "apps": [
+         {
+      "id": "jd_gyec",
+      "name": "经纬度坐标",
+      "keys": ["JD_IMMORTAL_LATLON"],
+      "author": "@didididiao",
+      "repo": "https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_immortal.js",
+      "settings": [
+        {
+          "id": "JD_IMMORTAL_LATLON",
+          "name": "经纬度坐标",
+          "val": "",
+          "type": "string",
+          "placeholder": "",
+          "desc": "填写自己的经纬度坐标，格式：{"lat":33.1, "lng":118.1}"
+        }],
+      "icons": [
+        "https://raw.githubusercontent.com/didididiao/icon/master/jd.png",
+        "https://raw.githubusercontent.com/didididiao/icon/master/jd.png"
+      ],
+      "script": "https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_immortal.js"
+    }
+  ]
+}
