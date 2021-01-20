@@ -1,18 +1,18 @@
 /*
 京东抽奖机
-更新时间：2021-01-19 18:12
+更新时间：2021-01-20 10.32
 修改自yangtingxiao大佬的脚本
-脚本说明：抽奖活动，【新店福利】【闪购盲盒】【健康服务】【东东福利屋】【东东焕新家】【OPPO】【新年上上签】【福音大转盘】【惊喜拆礼盒】，点通知只能跳转一个，入口在京东APP玩一玩里面可以看到
+脚本说明：抽奖活动，【新店福利】【闪购盲盒】【健康服务】【东东福利屋】【东东焕新家】【OPPO】【新年上上签】【福音大转盘】【惊喜拆礼盒】【健康年货节】，点通知只能跳转一个，入口在京东APP玩一玩里面可以看到
 脚本兼容: QuantumultX, Surge, Loon, JSBox, Node.js
 // quantumultx
 [task_local]
 #京东抽奖机
-11 1 * * * https://raw.githubusercontent.com/yangtingxiao/QuantumultX/master/scripts/jd/jd_lotteryMachine.js, tag=京东抽奖机, img-url=https://raw.githubusercontent.com/yangtingxiao/QuantumultX/master/image/jdlottery.png, enabled=true
+10 7 * * * https://raw.githubusercontent.com/didididiao/QuantumultX/master/jd_cjj.js, tag=京东抽奖机, img-url=https://raw.githubusercontent.com/didididiao/icon/master/image/jd.png, enabled=true
 // Loon
 [Script]
-cron "11 1 * * *" script-path=https://raw.githubusercontent.com/yangtingxiao/QuantumultX/master/scripts/jd/jd_lotteryMachine.js,tag=京东抽奖机
+cron "10 7 * * *" script-path=https://raw.githubusercontent.com/didididiao/QuantumultX/master/jd_cjj.js,tag=京东抽奖机
 // Surge
-京东抽奖机 = type=cron,cronexp=11 1 * * *,wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/yangtingxiao/QuantumultX/master/scripts/jd/jd_lotteryMachine.js
+京东抽奖机 = type=cron,cronexp=10 7 * * *,wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/didididiao/QuantumultX/master/jd_cjj.js
  */
 const $ = new Env('京东抽奖机');
 //Node.js用户请在jdCookie.js处填写京东ck;
@@ -20,12 +20,12 @@ const jdCookieNode = $.isNode() ? require('./jdCookie.js') : '';
 const STRSPLIT = "|";
 const needSum = false;            //是否需要显示汇总
 const printDetail = false;        //是否显示出参详情
-const appIdArr = ['1EFRRxA','1EFRQwA','1EFRTyg','1EFRSxA','1EFRSyw','1EFRVxA','1EFRUwg','1EFRVyg','1EFRVxw']
-const shareCodeArr = ['P04z54XCjVWmIaW5m9cZ2f433tIlJz4FjX2kfk','P04z54XCjVXnIaW5m9cZ2f433tIlLKXiUijZw4','P04z54XCjVUloaW5m9cZ2f433tIlNDtvQURO58','T0225KkcRx4b8lbWJU72wvZZcwCjVVmIaW5kRrbA','T0225KkcRx4b8lbWJU72wvZZcwCjVVl4aW5kRrbA','T0225KkcRx4b8lbWJU72wvZZcwCjVSmIaW5kRrbA','T0225KkcRx4b8lbWJU72wvZZcwCjVTnoaW5kRrbA','T0225KkcRx4b8lbWJU72wvZZcwCjVSloaW5kRrbA','']
-const homeDataFunPrefixArr = ['','','healthyDay','wfh','healthyDay','healthyDay','healthyDay','healthyDay']
-const collectScoreFunPrefixArr = ['','','','wfh','','','']
-const lotteryResultFunPrefixArr = ['','','interact_template','','interact_template','interact_template','interact_template','interact_template']
-const browseTimeArr = ['','','','','','10','10','10','10']
+const appIdArr = ['1EFRRxA','1EFRQwA','1EFRTyg','1EFRSxA','1EFRSyw','1EFRVxA','1EFRUwg','1EFRVyg','1EFRVxw','1EFRVxg','1EFRUww']
+const shareCodeArr = ['T016anDNlJOnIdlp-JpHCjVWmIaW5kRrbA','T016anDNlJOnIdlp-JpHCjVXnIaW5kRrbA','T016anDNlJOnIdlp-JpHCjVUloaW5kRrbA','T016anDNlJOnIdlp-JpHCjVVmIaW5kRrbA','T016anDNlJOnIdlp-JpHCjVVl4aW5kRrbA','T016anDNlJOnIdlp-JpHCjVSmIaW5kRrbA','T016anDNlJOnIdlp-JpHCjVTnoaW5kRrbA','T016anDNlJOnIdlp-JpHCjVSloaW5kRrbA','T016anDNlJOnIdlp-JpHCjVSm4aW5kRrbA','T016anDNlJOnIdlp-JpHCjVSmoaW5kRrbA','T016anDNlJOnIdlp-JpHCjVTn4aW5kRrbA']
+const homeDataFunPrefixArr = ['','','healthyDay','wfh','healthyDay','healthyDay','healthyDay','healthyDay','healthyDay','healthyDay','healthyDay']
+const collectScoreFunPrefixArr = ['','','','wfh','','','','','','','']
+const lotteryResultFunPrefixArr = ['','','interact_template','','interact_template','interact_template','interact_template','interact_template','interact_template','interact_template','interact_template']
+const browseTimeArr = ['','','','','','10','15','10','10','10','15']
 let merge = {}
 //IOS等用户直接用NobyDa的jd cookie
 let cookiesArr = [], cookie = '';
