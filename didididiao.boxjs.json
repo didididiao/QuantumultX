@@ -31,6 +31,48 @@
         "https://raw.githubusercontent.com/Orz-3/task/master/jd.png"
       ],
       "script": "https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_nian_wechat.js"
+    },
+    {
+      "id": "jd_my",
+      "name": "MY爱消除",
+      "keys": ["JDMY"],
+      "author": "",
+      "repo": "jd_my.js",
+      "settings": [
+        {
+          "id": "JDMY",
+          "name": "MY爱消除兑换商品名称",
+          "val": "",
+          "type": "string",
+          "placeholder": "",
+          "desc": "填写具体兑换商品的名称，默认为1888京豆"
+        }],
+      "icons": [
+        "https://raw.githubusercontent.com/didididiao/icon/master/jd.png",
+        "https://raw.githubusercontent.com/didididiao/icon/master/jd.png"
+      ],
+      "script": "jd_my.js"
+    },
+    {
+      "id": "jd_dd",
+      "name": "DD爱消除",
+      "keys": ["JDDD"],
+      "author": "",
+      "repo": "jd_dd.js",
+      "settings": [
+        {
+          "id": "JDDD",
+          "name": "DD爱消除兑换商品名称",
+          "val": "",
+          "type": "string",
+          "placeholder": "",
+          "desc": "填写具体兑换商品的名称，默认为1888京豆"
+        }],
+      "icons": [
+        "https://raw.githubusercontent.com/didididiao/icon/master/jd.png",
+        "https://raw.githubusercontent.com/didididiao/icon/master/jd.png"
+      ],
+      "script": "jd_dd.js"
     }
   ]
 }
