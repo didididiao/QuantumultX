@@ -1,0 +1,1 @@
+http://.+/task/read\? url script-analyze-echo-response https://raw.githubusercontent.com/age174/-/main/fqkk_auto_read.js
