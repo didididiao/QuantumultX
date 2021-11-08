@@ -638,7 +638,7 @@
 {
     "id": "djxs",
         "name": "得间小说",
-            "keys": ["djxsCookie","djxsReferer","djxsCookie2","djxsReferer2","djxsCookie3","djxsReferer3","djxsCookie4","djxsReferer4","djxsCookie5","djxsReferer5","djxsCookie6","djxsReferer6","djxsCookie7","djxsReferer7","djxsCookie8","djxsReferer8","djxsCookie9","djxsReferer9","djxsCookie10","djxsReferer10"],
+            "keys": ["djxsCookie","djxsReferer","djxsCookie2","djxsReferer2"],
                 "author": "@YaphetS0903",
                     "settings": [{
                         "id": "djxsstatus",
