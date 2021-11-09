@@ -662,31 +662,6 @@
                         "repo": "https://github.com/YaphetS0903/JStest/blob/main/djxs.js",
             "icons": ["https://raw.githubusercontent.com/YaphetS0903/JStest/main/image/YaphetS.jpg", "https://raw.githubusercontent.com/YaphetS0903/JStest/main/image/YaphetS.jpg"],
             "script": "https://raw.githubusercontent.com/YaphetS0903/JStest/main/djxs.js"
-  },
-
-   {
-    "id": "stuo",
-    "name": "商拓",
-    "keys": ["stuohd","stuohd2"],
-    "author": "@rcfan",
-    "settings": [
-      {
-        "id": "stuostatus",
-        "name": "当前账号",
-        "val": "1",
-        "type": "number",
-        "desc": "当前账号对应"
-      },
-      {
-        "id": "stuocount",
-        "name": "账号个数",
-        "val": "1",
-        "type": "number",
-        "desc": "需要几个账号，数字为几"
-      }],
-    "repo": "https://gitee.com/rcfan1/js",
-    "icons": ["https://gitee.com/rcfan1/js/raw/master/pictures/stuo.png", "https://gitee.com/rcfan1/js/raw/master/pictures/stuo.png"],
-    "script": "https://gitee.com/rcfan1/js/raw/master/stuo.js"
   }
     ]
 }
