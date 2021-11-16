@@ -759,11 +759,7 @@
             "id":"stuo",
             "name":"商拓",
             "keys":[
-                "stuohd",
-                "stuohd2",
-                "stuohd3",
-                "stuohd4",
-                "stuohd5"
+                "stuohd"
             ],
             "author":"@rcfan",
             "settings":[
