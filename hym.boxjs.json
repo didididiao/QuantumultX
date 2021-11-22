@@ -72,11 +72,11 @@
                   ], 
                   "repo": "https://gitee.com/tom210120/tom/raw/master/SJB/sjb.js", 
                   "icons": [
-                        "https://gitee.com/tom210120/tom/raw/master/Tom/Tom.jpg", 
-                        "https://gitee.com/tom210120/tom/raw/master/Tom/Tom.jpg"
+                        "https://raw.githubusercontent.com/didididiao/icon/master/sjb.png", 
+                        "https://raw.githubusercontent.com/didididiao/icon/master/sjb.png"
                   ], 
                   "script": "https://gitee.com/tom210120/tom/raw/master/SJB/sjb.js", 
-                  "icon": "https://gitee.com/tom210120/tom/raw/master/Tom/Tom.jpg"
+                  "icon": "https://raw.githubusercontent.com/didididiao/icon/master/sjb.png"
             }, 
             {
                   "id": "txstock", 
