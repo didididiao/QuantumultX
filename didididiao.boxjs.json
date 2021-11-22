@@ -518,7 +518,7 @@
                   "id": "jztt", 
                   "name": "九章头条", 
                   "keys": [
-                        "jztturl"
+                        "jztturl", "jztturl2"
                   ], 
                   "author": "@tom", 
                   "settings": [
