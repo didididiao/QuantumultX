@@ -69,6 +69,10 @@
                     "type": "number",
                     "desc": "推送以及通知控制在什么分钟段，可设置0-59,默认0到10"
                 }
+            ],
+            "icons": [
+                    "https://raw.githubusercontent.com/didididiao/icon/master/sjb.png", 
+                    "https://raw.githubusercontent.com/didididiao/icon/master/sjb.png"
             ]
         },
         {
@@ -112,6 +116,10 @@
                     "type": "number",
                     "desc": "默认为0,不自动提现"
                 }
+            ],
+            "icons": [
+                    "https://raw.githubusercontent.com/CenBoMin/GithubSync/main/TXSTOCK/txzxg.png", 
+                    "https://raw.githubusercontent.com/CenBoMin/GithubSync/main/TXSTOCK/txzxg.png"
             ]
         },
         {
@@ -120,6 +128,10 @@
             "keys": [
                 "jkdhd",
                 "jkdck"
+            ],
+            "icons": [
+                    "https://raw.githubusercontent.com/didididiao/icon/master/jkd.png", 
+                    "https://raw.githubusercontent.com/didididiao/icon/master/jkd.png"
             ]
         },
         {
@@ -127,6 +139,10 @@
             "name": "饿了么",
             "keys": [
                 "elmck"
+            ],
+            "icons": [
+                    "https://raw.githubusercontent.com/didididiao/icon/master/elm.png", 
+                    "https://raw.githubusercontent.com/didididiao/icon/master/elm.png"
             ]
         }
     ]
