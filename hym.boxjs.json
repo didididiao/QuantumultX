@@ -129,6 +129,14 @@
                         "https://raw.githubusercontent.com/CenBoMin/GithubSync/main/TXSTOCK/txzxg.png", 
                         "https://raw.githubusercontent.com/CenBoMin/GithubSync/main/TXSTOCK/txzxg.png"
                   ]
+            },
+            {
+                  "id": "jkd", 
+                  "name": "聚看点", 
+                  "keys": [
+                        "jkdhd", 
+                        "jkdck"
+                  ]
             }
       ]
 }
