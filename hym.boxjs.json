@@ -155,6 +155,19 @@
                 "https://raw.githubusercontent.com/didididiao/icon/master/elm.png",
                 "https://raw.githubusercontent.com/didididiao/icon/master/elm.png"
             ]
+        },
+        {
+            "id": "ksjsb",
+            "name": "快手极速版",
+            "keys": [
+                "kshd",
+                "ksgjdody",
+                "ggqqbody"
+            ],
+            "icons": [
+                "https://raw.githubusercontent.com/didididiao/icon/master/jkd.png",
+                "https://raw.githubusercontent.com/didididiao/icon/master/jkd.png"
+            ]
         }
     ]
 }
