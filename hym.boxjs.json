@@ -155,19 +155,6 @@
                 "https://raw.githubusercontent.com/didididiao/icon/master/elm.png",
                 "https://raw.githubusercontent.com/didididiao/icon/master/elm.png"
             ]
-        },
-        {
-            "id": "ksjsb",
-            "name": "快手",
-            "keys": [
-                "kshd",
-                "ksgjbody",
-                "ggqqbody"
-            ],
-            "icons": [
-                "https://raw.githubusercontent.com/didididiao/icon/master/kuaishou.png",
-                "https://raw.githubusercontent.com/didididiao/icon/master/kuaishou.png"
-            ]
         }
     ]
 }
