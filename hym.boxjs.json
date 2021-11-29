@@ -100,21 +100,21 @@
                     "name": "0代表不做新手任务，1代表做新手任务",
                     "val": "",
                     "type": "number",
-                    "desc": "默认为0,不自动提现"
+                    "desc": "默认为0,不做新手任务"
                 },
                 {
                     "id": "TxStockHelp",
                     "name": "0代表不做分享互助，1代表做分享互助",
                     "val": "",
                     "type": "number",
-                    "desc": "默认为0,不自动提现"
+                    "desc": "默认为1,做分享互助"
                 },
                 {
                     "id": "TxStockHelpOrder",
                     "name": "0代表不帮助其他用户，每个用户之间用@或者#隔开",
                     "val": "",
                     "type": "number",
-                    "desc": "默认为0,不自动提现"
+                    "desc": "默认为0"
                 }
             ],
             "icons": [
@@ -132,28 +132,6 @@
             "icons": [
                 "https://raw.githubusercontent.com/didididiao/icon/master/jkd.png",
                 "https://raw.githubusercontent.com/didididiao/icon/master/jkd.png"
-            ]
-        },
-        {
-            "id": "elm",
-            "name": "饿了么",
-            "keys": [
-                "elmck"
-            ],
-            "settings": [
-                {
-                    "id": "elmck",
-                    "name": "饿了么Cookie",
-                    "val": "",
-                    "type": "textarea",
-                    "autoGrow": true,
-                    "rows": 8,
-                    "desc": "饿了么Cookie"
-                }
-            ],
-            "icons": [
-                "https://raw.githubusercontent.com/didididiao/icon/master/elm.png",
-                "https://raw.githubusercontent.com/didididiao/icon/master/elm.png"
             ]
         }
     ]
