@@ -133,6 +133,43 @@
                 "https://raw.githubusercontent.com/didididiao/icon/master/jkd.png",
                 "https://raw.githubusercontent.com/didididiao/icon/master/jkd.png"
             ]
+        },
+        {
+            "id": "sqxsapp",
+            "name": "书旗小说",
+            "keys": [
+                "sqxsapp"
+            ],
+            "settings": [
+                {
+                    "id": "sqxsuserck",
+                    "name": "当前账号",
+                    "val": "1",
+                    "type": "number",
+                    "desc": "当前账号对应"
+                },
+                {
+                    "id": "tguserid",
+                    "name": "TG用户名",
+                    "val": "1",
+                    "type": "number",
+                    "desc": "从机器人获得"
+                },
+                {
+                    "id": "sqxsactivecode",
+                    "name": "授权码",
+                    "val": "",
+                    "type": "text",
+                    "desc": "从机器人获得"
+                }
+            ],
+            "author": "@David",
+            "repo": "https://github.com/bluesmallpig/scripts",
+            "icons": [
+                "https://github.com/bluesmallpig/scripts/blob/main/img/shuqi-mini.png?raw=true",
+                "https://github.com/bluesmallpig/scripts/blob/main/img/shuqi.png?raw=true"
+            ],
+            "script": "https://github.com/"
         }
     ]
 }
