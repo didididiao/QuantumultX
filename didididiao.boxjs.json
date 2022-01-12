@@ -346,7 +346,7 @@
                   "id": "jztt", 
                   "name": "九章头条", 
                   "keys": [
-                        "jzreadtoken", "jztturl2"
+                        "jzttToken", "jztturl2"
                   ], 
                   "author": "@tom", 
                   "settings": [
