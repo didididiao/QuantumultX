@@ -1,255 +1,247 @@
 {
-      "id": "didididiao.app.sub", 
-      "name": "自用变量订阅", 
-      "author": "@didididiao", 
-      "icon": "https://avatars1.githubusercontent.com/u/36787390?s=400&v=4", 
-      "repo": "https://github.com/didididiao/QuantumultX", 
-      "apps": [    
-            {
-                  "id": "JD_Cookies", 
-                  "name": "多 Ck 管理", 
-                  "keys": [
-                        "CookiesJD", 
-                        "cks_get_mute"
-                  ], 
-                  "descs_html": [
-                        "请勿随意在输入框修改内容，建议通过脚本去获取cookie，若要修改，请按照JSON 格式修改（<a href=\"https://www.bejson.com/json/format\">可使用此JSON校验</a> ，或点击右上角按钮🔘进行校验(如有弹窗提示则为异常JSON)）。", 
-                        "示例：[{\"userName\":\"jd_xxx\",\"cookie\":\"pt_key=AAJ;pt_pin=jd_xxx;\"},{\"userName\":\"jd_66\",\"cookie\":\"pt_key=AAJ;pt_pin=jd_66;\"}]", 
-                        "脚本地址【<a href=\"https://jdsharedresourcescdn.azureedge.net/jdresource/JD_extra_cookie.js\">京东多 CK获取</a>】,并按照此脚本注释进行配置", 
-                        "使用方式【<a href=\"https://home.m.jd.com/myJd/newhome.action\">个人中心</a>】获取对应的数据Code", 
-                        "注1：如与NobyDa的京东cookie重复，建议在此处删除重复的cookie", 
-                        "注2：删除条件，是用来清除不需要的ck，条件值为京东 ck 的第几个，如第一个：1，第二个：2；多个请使用,分割。删除ck 脚本不会去清理野比的ck，请谨慎使用。删除成功之后，请手动刷新 boxjs"
-                  ], 
-                  "settings": [
-                        {
-                              "id": "cks_get_mute", 
-                              "name": "静音获取", 
-                              "val": false, 
-                              "type": "boolean", 
-                              "desc": "更新时，不会执行通知提示"
-                        }, 
-                        {
-                              "id": "del_condition", 
-                              "name": "删除条件", 
-                              "val": "", 
-                              "type": "text", 
-                              "desc": "输入的条件,运行一次之后则会清空条件"
-                        }, 
-                        {
-                              "id": "CookiesJD", 
-                              "name": "CK 列表", 
-                              "val": "", 
-                              "type": "textarea", 
-                              "autoGrow": false, 
-                              "rows": 8, 
-                              "desc": "CK 列表 (JSON 格式)"
-                        }
-                  ], 
-                  "icons": [
-                        "https://raw.githubusercontent.com/Orz-3/mini/master/jd.png", 
-                        "https://raw.githubusercontent.com/Orz-3/task/master/jd.png"
-                  ], 
-                  "author": "@dompling", 
-                  "repo": "https://github.com/dompling/Script/blob/master/jd/JD_extra.js", 
-                  "scripts": [
-                        {
-                              "name": "京东签到", 
-                              "script": "https://raw.githubusercontent.com/dompling/Script/master/jd/JD_extra_sign.js"
-                        }, 
-                        {
-                              "name": "删除相关 ck", 
-                              "script": "https://raw.githubusercontent.com/dompling/Script/master/jd/jd_ck_del.js"
-                        }
-                  ]
-            },
+	"id": "didididiao.app.sub",
+	"name": "自用变量订阅",
+	"author": "@didididiao",
+	"icon": "https://avatars1.githubusercontent.com/u/36787390?s=400&v=4",
+	"repo": "https://github.com/didididiao/QuantumultX",
+	"apps": [{
+			"id": "JD_Cookies",
+			"name": "多 Ck 管理",
+			"keys": [
+				"CookiesJD",
+				"cks_get_mute"
+			],
+			"descs_html": [
+				"请勿随意在输入框修改内容，建议通过脚本去获取cookie，若要修改，请按照JSON 格式修改（<a href=\"https://www.bejson.com/json/format\">可使用此JSON校验</a> ，或点击右上角按钮🔘进行校验(如有弹窗提示则为异常JSON)）。",
+				"示例：[{\"userName\":\"jd_xxx\",\"cookie\":\"pt_key=AAJ;pt_pin=jd_xxx;\"},{\"userName\":\"jd_66\",\"cookie\":\"pt_key=AAJ;pt_pin=jd_66;\"}]",
+				"脚本地址【<a href=\"https://jdsharedresourcescdn.azureedge.net/jdresource/JD_extra_cookie.js\">京东多 CK获取</a>】,并按照此脚本注释进行配置",
+				"使用方式【<a href=\"https://home.m.jd.com/myJd/newhome.action\">个人中心</a>】获取对应的数据Code",
+				"注1：如与NobyDa的京东cookie重复，建议在此处删除重复的cookie",
+				"注2：删除条件，是用来清除不需要的ck，条件值为京东 ck 的第几个，如第一个：1，第二个：2；多个请使用,分割。删除ck 脚本不会去清理野比的ck，请谨慎使用。删除成功之后，请手动刷新 boxjs"
+			],
+			"settings": [{
+					"id": "cks_get_mute",
+					"name": "静音获取",
+					"val": false,
+					"type": "boolean",
+					"desc": "更新时，不会执行通知提示"
+				},
+				{
+					"id": "del_condition",
+					"name": "删除条件",
+					"val": "",
+					"type": "text",
+					"desc": "输入的条件,运行一次之后则会清空条件"
+				},
+				{
+					"id": "CookiesJD",
+					"name": "CK 列表",
+					"val": "",
+					"type": "textarea",
+					"autoGrow": false,
+					"rows": 8,
+					"desc": "CK 列表 (JSON 格式)"
+				}
+			],
+			"icons": [
+				"https://raw.githubusercontent.com/Orz-3/mini/master/jd.png",
+				"https://raw.githubusercontent.com/Orz-3/task/master/jd.png"
+			],
+			"author": "@dompling",
+			"repo": "https://github.com/dompling/Script/blob/master/jd/JD_extra.js",
+			"scripts": [{
+					"name": "京东签到",
+					"script": "https://raw.githubusercontent.com/dompling/Script/master/jd/JD_extra_sign.js"
+				},
+				{
+					"name": "删除相关 ck",
+					"script": "https://raw.githubusercontent.com/dompling/Script/master/jd/jd_ck_del.js"
+				}
+			]
+		},
 
-    {
-      "id": "hzh",
-      "name": "华住会",
-      "descs_html": [
-        "点此直达【<a href=\"https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/hzh/hzh.js\">脚本地址</a>】"
-      ],
-      "keys": ["@hzh.evil_hzhCookie", "@hzh.evil_hzhUserToken"],
-      "author": "@evilbutcher",
-      "repo": "https://github.com/evilbutcher/Quantumult_X/tree/master/check_in/hzh",
-      "icons": [
-        "https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/picture/hzh_tran.png",
-        "https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/picture/hzh.png"
-      ],
-      "script": "https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/hzh/hzh.js"
-    },
-         {
-      "id": "Github Monitor",
-      "name": "GitHub 监控",
-      "keys": [
-        "@github.repo"
-      ],
-      "settings": [
-        {
-          "id": "@github.repo",
-          "name": "仓库地址",
-          "val": "[\n\t\t{\n\t\t\t\t\"name\": \"NZW9314 脚本\",\n\t\t\t\t\"url\": \"https://github.com/nzw9314/QuantumultX/tree/master\"\n\t\t},\n\t\t{\n\t\t\t\t\"name\": \"Chavy 脚本\",\n\t\t\t\t\"url\": \"https://github.com/chavyleung/scripts\"\n\t\t},\n\t\t{\n\t\t\t\t\"name\": \"NobyDa\",\n\t\t\t\t\"file_names\": [\"JD-DailyBonus/JD_DailyBonus.js\", \"52pojie-DailyBonus\"],\n\t\t\t\t\"url\": \"https://github.com/NobyDa/Script/tree/master\"\n\t\t}\n]",
-          "type": "textarea",
-          "autoGrow": true,
-          "rows": 5,
-          "desc": "仓库地址 (JSON 格式)"
-        },
-        {
-          "id": "@github.token",
-          "name": "Github Token (可选)",
-          "val": "784a03feb07989d3339dfa41c7eb41777436cbfa",
-          "type": "text",
-          "desc": "Github Token"
-        }
-      ],
-      "author": "@Peng-YM",
-      "repo": "https://github.com/Peng-YM/QuanX",
-      "icons": [
-        "https://raw.githubusercontent.com/Orz-3/mini/master/github.png",
-        "https://raw.githubusercontent.com/Orz-3/task/master/github.png"
-      ],
-      "script": "https://raw.githubusercontent.com/Peng-YM/QuanX/master/Tasks/github.js"
-    },    
-      {
-      "id": "blackmatrix7.zhihu",
-      "name": "知乎助手",
-      "keys": ["zhihu_blocked_users", "zhihu_current_userinfo", "zhihu_keyword_block"],
-      "author": "@blackmatrix7",
-      "repo": "https://github.com/blackmatrix7/ios_rule_script/tree/master/script/zhihu",
-      "icons": ["https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/zhihu/zhihu.png", "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/zhihu/zhihu.png"],
-      "descs_html": [
-        "<h4 align=\"left\">具体功能说明查看<a href=\"https://github.com/blackmatrix7/ios_rule_script/tree/master/script/zhihu#readme\">README.md</a></h4>",
-        "<h4 align=\"left\">✨为Plus版本专属功能，❓为已过时或即将淘汰功能</h4>",
-        "<h4 align=\"left\">切换Lite、Plus版本，或出现异常请执行数据清理</h4>"
-      ],
-      "scripts": [
-        {
-          "name": "知乎助手数据清理",
-          "script": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/zhihu/zhihu_plus.js"
-        }
-      ],
-      "settings": [
-        {
-          "id": "zhihu_settings_recommend_stream",
-          "name": "屏蔽推荐页流媒体",
-          "val": false,
-          "type": "boolean",
-          "desc": "屏蔽推荐页中的视频、直播等流媒体信息"
-        },
-        {
-          "id": "zhihu_settings_moments_stream",
-          "name": "屏蔽关注页流媒体",
-          "val": false,
-          "type": "boolean",
-          "desc": "屏蔽关注页中的“最新视频”"
-        },
-        {
-          "id": "zhihu_settings_hot_list",
-          "name": "热榜去广告",
-          "val": true,
-          "type": "boolean",
-          "desc": "去除知乎热榜页面的广告"
-        },
-        {
-          "id": "zhihu_settings_fake_vip",
-          "name": "显示为盐选会员",
-          "val": false,
-          "type": "boolean",
-          "desc": "非会员用户显示为盐选会员，仅自己可见，无实际效果"
-        },
-        {
-          "id": "zhihu_settings_preset_words",
-          "name": "屏蔽预置关键词广告",
-          "val": false,
-          "type": "boolean",
-          "desc": "屏蔽搜索页中的预置关键词广告"
-        },
-        {
-          "id": "zhihu_settings_blocked_users",
-          "name": "黑名单屏蔽效果增强✨",
-          "val": true,
-          "type": "boolean",
-          "desc": "增强知乎APP黑名单用户屏蔽效果"
-        },
-        {
-          "id": "zhihu_settings_blocked_keywords",
-          "name": "推荐页关键词过滤✨",
-          "val": true,
-          "type": "boolean",
-          "desc": "除普通关键词外还支持正则表达式过滤"
-        },
-        {
-          "id": "zhihu_settings_sys_msg",
-          "name": "屏蔽官方账号推广消息✨",
-          "val": false,
-          "type": "boolean",
-          "desc": "屏蔽消息页内的官方账号推广消息"
-        },
-        {
-          "id": "zhihu_settings_answer_tip",
-          "name": "付费内容/营销推广/购物推广提醒✨",
-          "val": true,
-          "type": "boolean",
-          "desc": "在知乎回答中提示付费或营销内容"
-        },
-        {
-          "id": "zhihu_settings_remove_yanxuan",
-          "name": "屏蔽“盐选推荐”❓",
-          "val": true,
-          "type": "boolean",
-          "desc": "屏蔽推荐页中的“盐选推荐”"
-        },
-        {
-          "id": "zhihu_settings_app_conf",
-          "name": "去除推荐页多余标签❓",
-          "val": false,
-          "type": "boolean",
-          "desc": "知乎7.x及以上版本无效"
-        },
-        {
-          "id": "zhihu_settings_hot_search",
-          "name": "知乎热搜去广告❓",
-          "val": false,
-          "type": "boolean",
-          "desc": "知乎7.x及以上版本无效"
-        },
-        {
-          "id": "zhihu_keyword_block",
-          "name": "知乎屏蔽关键词",
-          "val": "",
-          "type": "textarea",
-          "desc": "必须是JSON格式，Key为用户Id，不要修改。格式不正确可能导致执行异常。"
-        },
-        {
-          "id": "magicjs_loglevel",
-          "name": "日志等级",
-          "val": "INFO",
-          "type": "radios",
-          "items": [
-            {
-              "key": "INFO",
-              "label": "INFO"
-            },
-            {
-              "key": "WARNING",
-              "label": "WARNING"
-            },
-            {
-              "key": "ERROR",
-              "label": "ERROR"
-            },
-            {
-              "key": "CRITICAL",
-              "label": "CRITICAL"
-            },
-            {
-              "key": "DEBUG",
-              "label": "DEBUG"
-            }
-          ],
-          "desc": "出现异常时请选择DEBUG提交日志"
-        }
-      ]
-    }
-      ]
+		{
+			"id": "hzh",
+			"name": "华住会",
+			"descs_html": [
+				"点此直达【<a href=\"https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/hzh/hzh.js\">脚本地址</a>】"
+			],
+			"keys": ["@hzh.evil_hzhCookie", "@hzh.evil_hzhUserToken"],
+			"author": "@evilbutcher",
+			"repo": "https://github.com/evilbutcher/Quantumult_X/tree/master/check_in/hzh",
+			"icons": [
+				"https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/picture/hzh_tran.png",
+				"https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/picture/hzh.png"
+			],
+			"script": "https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/hzh/hzh.js"
+		},
+		{
+			"id": "Github Monitor",
+			"name": "GitHub 监控",
+			"keys": [
+				"@github.repo"
+			],
+			"settings": [{
+					"id": "@github.repo",
+					"name": "仓库地址",
+					"val": "[\n\t\t{\n\t\t\t\t\"name\": \"NZW9314 脚本\",\n\t\t\t\t\"url\": \"https://github.com/nzw9314/QuantumultX/tree/master\"\n\t\t},\n\t\t{\n\t\t\t\t\"name\": \"Chavy 脚本\",\n\t\t\t\t\"url\": \"https://github.com/chavyleung/scripts\"\n\t\t},\n\t\t{\n\t\t\t\t\"name\": \"NobyDa\",\n\t\t\t\t\"file_names\": [\"JD-DailyBonus/JD_DailyBonus.js\", \"52pojie-DailyBonus\"],\n\t\t\t\t\"url\": \"https://github.com/NobyDa/Script/tree/master\"\n\t\t}\n]",
+					"type": "textarea",
+					"autoGrow": true,
+					"rows": 5,
+					"desc": "仓库地址 (JSON 格式)"
+				},
+				{
+					"id": "@github.token",
+					"name": "Github Token (可选)",
+					"val": "784a03feb07989d3339dfa41c7eb41777436cbfa",
+					"type": "text",
+					"desc": "Github Token"
+				}
+			],
+			"author": "@Peng-YM",
+			"repo": "https://github.com/Peng-YM/QuanX",
+			"icons": [
+				"https://raw.githubusercontent.com/Orz-3/mini/master/github.png",
+				"https://raw.githubusercontent.com/Orz-3/task/master/github.png"
+			],
+			"script": "https://raw.githubusercontent.com/Peng-YM/QuanX/master/Tasks/github.js"
+		},
+		{
+			"id": "blackmatrix7.zhihu",
+			"name": "知乎助手",
+			"keys": ["zhihu_blocked_users", "zhihu_current_userinfo", "zhihu_keyword_block"],
+			"author": "@blackmatrix7",
+			"repo": "https://github.com/blackmatrix7/ios_rule_script/tree/master/script/zhihu",
+			"icons": ["https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/zhihu/zhihu.png", "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/zhihu/zhihu.png"],
+			"descs_html": [
+				"<h4 align=\"left\">具体功能说明查看<a href=\"https://github.com/blackmatrix7/ios_rule_script/tree/master/script/zhihu#readme\">README.md</a></h4>",
+				"<h4 align=\"left\">✨为Plus版本专属功能，❓为已过时或即将淘汰功能</h4>",
+				"<h4 align=\"left\">切换Lite、Plus版本，或出现异常请执行数据清理</h4>"
+			],
+			"scripts": [{
+				"name": "知乎助手数据清理",
+				"script": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/zhihu/zhihu_plus.js"
+			}],
+			"settings": [{
+					"id": "zhihu_settings_recommend_stream",
+					"name": "屏蔽推荐页流媒体",
+					"val": false,
+					"type": "boolean",
+					"desc": "屏蔽推荐页中的视频、直播等流媒体信息"
+				},
+				{
+					"id": "zhihu_settings_moments_stream",
+					"name": "屏蔽关注页流媒体",
+					"val": false,
+					"type": "boolean",
+					"desc": "屏蔽关注页中的“最新视频”"
+				},
+				{
+					"id": "zhihu_settings_hot_list",
+					"name": "热榜去广告",
+					"val": true,
+					"type": "boolean",
+					"desc": "去除知乎热榜页面的广告"
+				},
+				{
+					"id": "zhihu_settings_fake_vip",
+					"name": "显示为盐选会员",
+					"val": false,
+					"type": "boolean",
+					"desc": "非会员用户显示为盐选会员，仅自己可见，无实际效果"
+				},
+				{
+					"id": "zhihu_settings_preset_words",
+					"name": "屏蔽预置关键词广告",
+					"val": false,
+					"type": "boolean",
+					"desc": "屏蔽搜索页中的预置关键词广告"
+				},
+				{
+					"id": "zhihu_settings_blocked_users",
+					"name": "黑名单屏蔽效果增强✨",
+					"val": true,
+					"type": "boolean",
+					"desc": "增强知乎APP黑名单用户屏蔽效果"
+				},
+				{
+					"id": "zhihu_settings_blocked_keywords",
+					"name": "推荐页关键词过滤✨",
+					"val": true,
+					"type": "boolean",
+					"desc": "除普通关键词外还支持正则表达式过滤"
+				},
+				{
+					"id": "zhihu_settings_sys_msg",
+					"name": "屏蔽官方账号推广消息✨",
+					"val": false,
+					"type": "boolean",
+					"desc": "屏蔽消息页内的官方账号推广消息"
+				},
+				{
+					"id": "zhihu_settings_answer_tip",
+					"name": "付费内容/营销推广/购物推广提醒✨",
+					"val": true,
+					"type": "boolean",
+					"desc": "在知乎回答中提示付费或营销内容"
+				},
+				{
+					"id": "zhihu_settings_remove_yanxuan",
+					"name": "屏蔽“盐选推荐”❓",
+					"val": true,
+					"type": "boolean",
+					"desc": "屏蔽推荐页中的“盐选推荐”"
+				},
+				{
+					"id": "zhihu_settings_app_conf",
+					"name": "去除推荐页多余标签❓",
+					"val": false,
+					"type": "boolean",
+					"desc": "知乎7.x及以上版本无效"
+				},
+				{
+					"id": "zhihu_settings_hot_search",
+					"name": "知乎热搜去广告❓",
+					"val": false,
+					"type": "boolean",
+					"desc": "知乎7.x及以上版本无效"
+				},
+				{
+					"id": "zhihu_keyword_block",
+					"name": "知乎屏蔽关键词",
+					"val": "",
+					"type": "textarea",
+					"desc": "必须是JSON格式，Key为用户Id，不要修改。格式不正确可能导致执行异常。"
+				},
+				{
+					"id": "magicjs_loglevel",
+					"name": "日志等级",
+					"val": "INFO",
+					"type": "radios",
+					"items": [{
+							"key": "INFO",
+							"label": "INFO"
+						},
+						{
+							"key": "WARNING",
+							"label": "WARNING"
+						},
+						{
+							"key": "ERROR",
+							"label": "ERROR"
+						},
+						{
+							"key": "CRITICAL",
+							"label": "CRITICAL"
+						},
+						{
+							"key": "DEBUG",
+							"label": "DEBUG"
+						}
+					],
+					"desc": "出现异常时请选择DEBUG提交日志"
+				}
+			]
+		}
+	]
 }
