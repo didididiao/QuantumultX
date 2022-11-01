@@ -6,7 +6,7 @@
 	"repo": "https://github.com/didididiao/QuantumultX",
 	"apps": [{
 			"id": "JD_Cookies",
-			"name": "多 Ck 管理",
+			"name": "京东",
 			"keys": [
 				"CookiesJD"
 			],
@@ -29,7 +29,7 @@
 		},
 {
 			"id": "elm_Cookies",
-			"name": "饿了么管理",
+			"name": "饿了么",
 			"keys": [
 				"elmCookie"
 			],
