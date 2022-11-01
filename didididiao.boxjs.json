@@ -8,23 +8,9 @@
 			"id": "JD_Cookies",
 			"name": "多 Ck 管理",
 			"keys": [
-				"CookiesJD",
-				"cks_get_mute"
+				"CookiesJD"
 			],
-			"settings": [{
-					"id": "cks_get_mute",
-					"name": "静音获取",
-					"val": false,
-					"type": "boolean",
-					"desc": "更新时，不会执行通知提示"
-				},
-				{
-					"id": "del_condition",
-					"name": "删除条件",
-					"val": "",
-					"type": "text",
-					"desc": "输入的条件,运行一次之后则会清空条件"
-				},
+			"settings": [
 				{
 					"id": "CookiesJD",
 					"name": "CK 列表",
@@ -39,19 +25,36 @@
 				"https://raw.githubusercontent.com/Orz-3/mini/master/jd.png",
 				"https://raw.githubusercontent.com/Orz-3/task/master/jd.png"
 			],
-			"author": "@dompling",
-			"repo": "https://github.com/dompling/Script/blob/master/jd/JD_extra.js",
-			"scripts": [{
-					"name": "京东签到",
-					"script": "https://raw.githubusercontent.com/dompling/Script/master/jd/JD_extra_sign.js"
-				},
+			"author": "@dompling"
+		},
+{
+			"id": "elm_Cookies",
+			"name": "饿了么管理",
+			"keys": [
+				"elmCookie"
+			],
+			"settings": [
 				{
-					"name": "删除相关 ck",
-					"script": "https://raw.githubusercontent.com/dompling/Script/master/jd/jd_ck_del.js"
+					"id": "elmCookie",
+					"name": "CK ",
+					"val": "",
+					"type": "textarea",
+					"autoGrow": false,
+					"rows": 10,
+					"desc": "CK "
+				}
+			],
+			"icons": [
+				"https://raw.githubusercontent.com/didididiao/icon/master/elm.png",
+				"https://raw.githubusercontent.com/didididiao/icon/master/elm.png"
+			],
+			"author": "@dompling",
+			"scripts": [{
+					"name": "饿了么",
+					"script": "https://raw.githubusercontent.com/leafTheFish/DeathNote/main/elm.js"
 				}
 			]
 		},
-
 		{
 			"id": "hzh",
 			"name": "华住会",
