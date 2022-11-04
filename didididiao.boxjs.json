@@ -31,11 +31,11 @@
 			"id": "elm_Cookies",
 			"name": "饿了么",
 			"keys": [
-				"elmck"
+				"elmCookie"
 			],
 			"settings": [
 				{
-					"id": "elmck",
+					"id": "elmCookie",
 					"name": "CK ",
 					"val": "",
 					"type": "textarea",
